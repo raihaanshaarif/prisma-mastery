@@ -158,11 +158,12 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": true,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://postgres:mahina@localhost:5432/prisma_mastery?schema=public"
+        "value": null
       }
     }
   },
